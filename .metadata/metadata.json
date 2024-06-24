@@ -1,0 +1,13 @@
+{
+  "name" : "Victoria Tweaks Mod",
+  "id" : "2935989855",
+  "version" : "1.6.0",
+  "supported_game_version" : "1.6.*",
+  "short_description" : "",
+  "thumbnail" : "thumbnail.png",
+  "tags" : [],
+  "relationships" : [],
+  "game_custom_data" : {
+    "multiplayer_synchronized" : true
+  }
+}
