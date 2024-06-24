@@ -47,6 +47,7 @@ law_child_labor_allowed = {
 		value = 0
 		
 		if = {
+<<<<<<< HEAD
 			limit = {
 				law_is_important = yes
 			}
@@ -59,6 +60,9 @@ law_child_labor_allowed = {
 				has_variable = desired_law_var
                 scope:law = var:desired_law_var
 			}
+=======
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
+>>>>>>> 40101a09 (V1.7)
 			add = 750
 		}
 	}
@@ -127,11 +131,7 @@ law_restricted_child_labor = {
 		}
 		
 		if = {
-			limit = { 
-				has_journal_entry = je_government_petition
-				has_variable = desired_law_var
-                scope:law = var:desired_law_var
-			}
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
 		}
 	}
@@ -164,6 +164,7 @@ law_compulsory_primary_school = {
 		value = 0
 		
 		if = {
+<<<<<<< HEAD
 			limit = {
 				law_is_important = yes
 			}
@@ -176,6 +177,9 @@ law_compulsory_primary_school = {
 				has_variable = desired_law_var
                 scope:law = var:desired_law_var
 			}
+=======
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
+>>>>>>> 40101a09 (V1.7)
 			add = 750
 		}
 	}

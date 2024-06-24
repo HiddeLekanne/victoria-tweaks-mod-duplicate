@@ -71,11 +71,7 @@ law_consumption_based_taxation = {
 		}
 		
 		if = {
-			limit = { 
-				has_journal_entry = je_government_petition
-				has_variable = desired_law_var
-                scope:law = var:desired_law_var
-			}
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
 		}
 	}
@@ -146,6 +142,7 @@ law_land_based_taxation = {
 		value = 0
 		
 		if = {
+<<<<<<< HEAD
 			limit = {
 				law_is_important = yes
 			}
@@ -158,6 +155,9 @@ law_land_based_taxation = {
 				has_variable = desired_law_var
                 scope:law = var:desired_law_var
 			}
+=======
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
+>>>>>>> 40101a09 (V1.7)
 			add = 750
 		}
 	}
@@ -238,6 +238,7 @@ law_per_capita_based_taxation = {
 		value = 0
 		
 		if = {
+<<<<<<< HEAD
 			limit = {
 				law_is_important = yes
 			}
@@ -250,6 +251,9 @@ law_per_capita_based_taxation = {
 				has_variable = desired_law_var
                 scope:law = var:desired_law_var
 			}
+=======
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
+>>>>>>> 40101a09 (V1.7)
 			add = 750
 		}
 	}
@@ -325,6 +329,7 @@ law_proportional_taxation = {
 		value = 0
 		
 		if = {
+<<<<<<< HEAD
 			limit = {
 				law_is_important = yes
 			}
@@ -337,6 +342,9 @@ law_proportional_taxation = {
 				has_variable = desired_law_var
                 scope:law = var:desired_law_var
 			}
+=======
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
+>>>>>>> 40101a09 (V1.7)
 			add = 750
 		}
 	}
@@ -411,6 +419,7 @@ law_graduated_taxation = {
 		value = 0
 		
 		if = {
+<<<<<<< HEAD
 			limit = {
 				law_is_important = yes
 			}
@@ -423,6 +432,9 @@ law_graduated_taxation = {
 				has_variable = desired_law_var
                 scope:law = var:desired_law_var
 			}
+=======
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
+>>>>>>> 40101a09 (V1.7)
 			add = 750
 		}
 	}

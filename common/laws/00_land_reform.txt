@@ -34,7 +34,12 @@
 	
 	modifier = {
 		interest_group_ig_landowners_pol_str_mult = 0.5
+<<<<<<< HEAD
 		state_infrastructure_from_population_max_mult = -0.2
+=======
+		state_peasants_internal_migration_disallowed_bool = yes
+		state_peasants_mass_migration_disallowed_bool = yes
+>>>>>>> 40101a09 (V1.7)
 	}
 
 	possible_political_movements = {
@@ -73,11 +78,7 @@
 		}
 		
 		if = {
-			limit = { 
-				has_journal_entry = je_government_petition
-				has_variable = desired_law_var
-                scope:law = var:desired_law_var
-			}
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
 		}
 	}
@@ -92,6 +93,7 @@ law_tenant_farmers = {
 
 	modifier = {
 		interest_group_ig_landowners_pol_str_mult = 0.25
+		state_peasants_internal_migration_disallowed_bool = yes
 	}
 
 	possible_political_movements = {
@@ -163,11 +165,7 @@ law_tenant_farmers = {
 		}
 		
 		if = {
-			limit = { 
-				has_journal_entry = je_government_petition
-				has_variable = desired_law_var
-                scope:law = var:desired_law_var
-			}
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
 		}
 	}
@@ -199,6 +197,7 @@ law_commercialized_agriculture = {
 	}
 	
 	on_enact = {
+		custom_tooltip = financial_districts_buy_farms_tt
 		if = {
 			limit = {
 				NOR = {
@@ -273,6 +272,7 @@ law_commercialized_agriculture = {
 
 	ai_enact_weight_modifier = { #Petitions
 		value = 0
+<<<<<<< HEAD
 		
 				if = {
 			limit = {
@@ -281,12 +281,11 @@ law_commercialized_agriculture = {
 			add = 750
 		}
 		
+=======
+
+>>>>>>> 40101a09 (V1.7)
 		if = {
-			limit = { 
-				has_journal_entry = je_government_petition
-				has_variable = desired_law_var
-                scope:law = var:desired_law_var
-			}
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
 		}
 	}
@@ -310,8 +309,13 @@ law_homesteading = {
 	}
 
 	modifier = {
+<<<<<<< HEAD
 		country_farmers_pol_str_mult = 0.10
 		state_farmers_investment_pool_efficiency_mult = 0.25
+=======
+		country_farmers_pol_str_mult = 0.25
+		building_group_bg_agriculture_allowed_collectivization_add = 0.5
+>>>>>>> 40101a09 (V1.7)
 	}
 
 	on_enact = {
@@ -404,11 +408,7 @@ law_homesteading = {
 		}
 		
 		if = {
-			limit = { 
-				has_journal_entry = je_government_petition
-				has_variable = desired_law_var
-                scope:law = var:desired_law_var
-			}
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
 		}
 	}
@@ -494,11 +494,7 @@ law_collectivized_agriculture = {
 		}
 		
 		if = {
-			limit = { 
-				has_journal_entry = je_government_petition
-				has_variable = desired_law_var
-                scope:law = var:desired_law_var
-			}
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
 		}
 		

@@ -10,9 +10,10 @@ law_outlawed_dissent = {
 	
 	modifier = {
 		country_authority_add = 200
-		country_promotion_ig_attraction_mult = 0.5
+		country_bolster_ig_attraction_mult = 0.5
 		country_suppression_ig_attraction_mult = -0.5
 		country_tech_spread_mult = -0.15
+		country_leverage_resistance_mult = 0.5
 	}
 	
 	possible_political_movements = {
@@ -38,11 +39,7 @@ law_outlawed_dissent = {
 		}
 		
 		if = {
-			limit = { 
-				has_journal_entry = je_government_petition
-				has_variable = desired_law_var
-                scope:law = var:desired_law_var
-			}
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
 		}
 	}
@@ -56,9 +53,10 @@ law_censorship = {
 	
 	modifier = {
 		country_authority_add = 100
-		country_promotion_ig_attraction_mult = 0.4
+		country_bolster_ig_attraction_mult = 0.4
 		country_suppression_ig_attraction_mult = -0.4
 		country_tech_spread_mult = -0.10
+		country_leverage_resistance_mult = 0.25
 	}
 	
 	possible_political_movements = {
@@ -85,11 +83,7 @@ law_censorship = {
 		}
 		
 		if = {
-			limit = { 
-				has_journal_entry = je_government_petition
-				has_variable = desired_law_var
-                scope:law = var:desired_law_var
-			}
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
 		}
 	}
@@ -103,7 +97,7 @@ law_right_of_assembly = {
 	
 	modifier = {
 		country_authority_add = 50
-		country_promotion_ig_attraction_mult = 0.3
+		country_bolster_ig_attraction_mult = 0.3
 		country_suppression_ig_attraction_mult = -0.3
 	}
 	
@@ -155,11 +149,7 @@ law_right_of_assembly = {
 		}
 		
 		if = {
-			limit = { 
-				has_journal_entry = je_government_petition
-				has_variable = desired_law_var
-                scope:law = var:desired_law_var
-			}
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
 		}
 	}
@@ -177,6 +167,7 @@ law_protected_speech = {
 	
 	modifier = {
 		country_tech_spread_mult = 0.25
+		country_leverage_resistance_mult = -0.25
 	}
 	
 	possible_political_movements = {
@@ -215,11 +206,7 @@ law_protected_speech = {
 		}
 		
 		if = {
-			limit = { 
-				has_journal_entry = je_government_petition
-				has_variable = desired_law_var
-                scope:law = var:desired_law_var
-			}
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
 		}
 	}

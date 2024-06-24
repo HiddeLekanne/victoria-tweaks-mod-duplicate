@@ -5,7 +5,12 @@
 	ai_usage = advance
     is_basic_order_type = yes
 
+	visible = {
+		has_role = general
+	}
+
     possible = {
+<<<<<<< HEAD
         error_check = {
             severity = invalid
             has_role = general
@@ -18,6 +23,9 @@
             severity = invalid
             ai_ally_can_advance_front = yes
         }
+=======
+		has_role = general
+>>>>>>> 40101a09 (V1.7)
     }
 
     modifier = {
@@ -40,7 +48,12 @@ advance_reckless = {
     military_type = army
 	ai_usage = advance
 
+	visible = {
+		has_role = general
+	}
+
     possible = {
+<<<<<<< HEAD
         error_check = {
             severity = invalid
             has_role = general
@@ -53,6 +66,9 @@ advance_reckless = {
             severity = invalid
             ai_ally_can_advance_front = yes
         }
+=======
+		has_role = general
+>>>>>>> 40101a09 (V1.7)
 		has_trait = reckless
     }
 
@@ -80,7 +96,12 @@ advance_pillager = {
     military_type = army
 	ai_usage = advance
 
+	visible = {
+		has_role = general
+	}
+
     possible = {
+<<<<<<< HEAD
         error_check = {
             severity = invalid
             has_role = general
@@ -93,6 +114,9 @@ advance_pillager = {
             severity = invalid
             ai_ally_can_advance_front = yes
         }
+=======
+		has_role = general
+>>>>>>> 40101a09 (V1.7)
 		OR = {
 			has_trait = cruel
 			has_trait = wrathful
@@ -125,7 +149,12 @@ advance_cautious = {
     military_type = army
 	ai_usage = advance
 
+	visible = {
+		has_role = general
+	}
+
     possible = {
+<<<<<<< HEAD
         error_check = {
             severity = invalid
             has_role = general
@@ -138,6 +167,9 @@ advance_cautious = {
             severity = invalid
             ai_ally_can_advance_front = yes
         }
+=======
+		has_role = general
+>>>>>>> 40101a09 (V1.7)
 		has_trait = cautious
     }
 
@@ -163,7 +195,12 @@ advance_heavy_barrage = {
     military_type = army
     ai_usage = advance
 
+	visible = {
+		has_role = general
+	}
+
     possible = {
+<<<<<<< HEAD
         error_check = {
             severity = invalid
             has_role = general
@@ -176,6 +213,9 @@ advance_heavy_barrage = {
             severity = invalid
             ai_ally_can_advance_front = yes
         }
+=======
+		has_role = general
+>>>>>>> 40101a09 (V1.7)
         OR = {
            has_trait = basic_artillery_commander
            has_trait = experienced_artillery_commander
@@ -206,7 +246,12 @@ advance_cavalry_assualt = {
     military_type = army
     ai_usage = advance
 
+	visible = {
+		has_role = general
+	}
+
     possible = {
+<<<<<<< HEAD
         error_check = {
             severity = invalid
             has_role = general
@@ -219,6 +264,9 @@ advance_cavalry_assualt = {
             severity = invalid
             ai_ally_can_advance_front = yes
         }
+=======
+		has_role = general
+>>>>>>> 40101a09 (V1.7)
         trigger_if = {
             limit = {
                 has_role = general
@@ -281,7 +329,12 @@ advance_tank_assualt = {
     military_type = army
     ai_usage = advance
 
+	visible = {
+		has_role = general
+	}
+
     possible = {
+<<<<<<< HEAD
         error_check = {
             severity = invalid
             has_role = general
@@ -294,6 +347,9 @@ advance_tank_assualt = {
             severity = invalid
             ai_ally_can_advance_front = yes
         }
+=======
+		has_role = general
+>>>>>>> 40101a09 (V1.7)
         has_trait = innovative
         trigger_if = {
             limit = {

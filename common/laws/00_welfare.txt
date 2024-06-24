@@ -23,6 +23,7 @@
 		value = 0
 		
 		if = {
+<<<<<<< HEAD
 			limit = {
 				law_is_important = yes
 			}
@@ -35,6 +36,9 @@
 				has_variable = desired_law_var
                 scope:law = var:desired_law_var
 			}
+=======
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
+>>>>>>> 40101a09 (V1.7)
 			add = 750
 		}
 	}
@@ -78,6 +82,7 @@ law_poor_laws = {
 		value = 0
 		
 		if = {
+<<<<<<< HEAD
 			limit = {
 				law_is_important = yes
 			}
@@ -90,6 +95,9 @@ law_poor_laws = {
 				has_variable = desired_law_var
                 scope:law = var:desired_law_var
 			}
+=======
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
+>>>>>>> 40101a09 (V1.7)
 			add = 750
 		}
 	}
@@ -140,6 +148,7 @@ law_wage_subsidies = {
 		value = 0
 		
 		if = {
+<<<<<<< HEAD
 			limit = {
 				law_is_important = yes
 			}
@@ -152,6 +161,9 @@ law_wage_subsidies = {
 				has_variable = desired_law_var
                 scope:law = var:desired_law_var
 			}
+=======
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
+>>>>>>> 40101a09 (V1.7)
 			add = 750
 		}
 	}
@@ -206,6 +218,7 @@ law_old_age_pension = {
 		value = 0
 		
 		if = {
+<<<<<<< HEAD
 			limit = {
 				law_is_important = yes
 			}
@@ -218,6 +231,9 @@ law_old_age_pension = {
 				has_variable = desired_law_var
                 scope:law = var:desired_law_var
 			}
+=======
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
+>>>>>>> 40101a09 (V1.7)
 			add = 750
 		}
 	}

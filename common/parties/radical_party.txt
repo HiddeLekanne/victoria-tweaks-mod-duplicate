@@ -115,6 +115,7 @@ radical_party = {
 				}
 			}
 			triggered_desc = {
+<<<<<<< HEAD
 				desc = party_french_party
 				trigger = {
 					exists = c:GRE
@@ -131,6 +132,8 @@ radical_party = {
 				}
 			}
 			triggered_desc = {
+=======
+>>>>>>> 40101a09 (V1.7)
 				desc = party_republican_union
 				trigger = {
 					exists = c:FRA

@@ -47,6 +47,7 @@ law_mercantilism = {
 		value = 0
 		
 		if = {
+<<<<<<< HEAD
 			limit = {
 				law_is_important = yes
 			}
@@ -59,6 +60,9 @@ law_mercantilism = {
 				has_variable = desired_law_var
                 scope:law = var:desired_law_var
 			}
+=======
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
+>>>>>>> 40101a09 (V1.7)
 			add = 750
 		}
 	}
@@ -100,6 +104,7 @@ law_protectionism = {
 		value = 0
 		
 		if = {
+<<<<<<< HEAD
 			limit = {
 				law_is_important = yes
 			}
@@ -112,6 +117,9 @@ law_protectionism = {
 				has_variable = desired_law_var
                 scope:law = var:desired_law_var
 			}
+=======
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
+>>>>>>> 40101a09 (V1.7)
 			add = 750
 		}
 	}
@@ -147,6 +155,7 @@ law_free_trade = {
 		country_trade_route_competitiveness_mult = 0.5
 		country_trade_route_quantity_mult = 0.5
 		country_trade_route_cost_mult = -0.5
+		country_leverage_resistance_mult = -0.25
 	}
 	
 	possible_political_movements = {
@@ -161,6 +170,7 @@ law_free_trade = {
 		value = 0
 		
 		if = {
+<<<<<<< HEAD
 			limit = {
 				law_is_important = yes
 			}
@@ -173,6 +183,9 @@ law_free_trade = {
 				has_variable = desired_law_var
                 scope:law = var:desired_law_var
 			}
+=======
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
+>>>>>>> 40101a09 (V1.7)
 			add = 750
 		}
 	}
@@ -194,9 +207,11 @@ law_isolationism = {
 		state_tax_capacity_mult = 0.25
 		country_tech_spread_mult = -0.15
 		
+		country_leverage_resistance_mult = 1.0
+		
 		country_max_declared_interests_mult = -0.5
 		
-		market_disallow_trade_routes = yes
+		market_disallow_trade_routes_bool = yes
 	}
 	
 	possible_political_movements = {
@@ -207,12 +222,24 @@ law_isolationism = {
 	pop_support = {
 		value = 0
 	}
+<<<<<<< HEAD
 
 		ai_will_do = {
 		ruler = {
 			OR = {
 				has_ideology = ideology:ideology_traditionalist
 				has_ideology = ideology:ideology_vanguardist
+=======
+	
+	ai_will_do = {
+		OR = {
+			has_journal_entry = je_gyojo_shinwon
+			ruler = {
+				OR = {
+					has_ideology = ideology:ideology_traditionalist
+					has_ideology = ideology:ideology_vanguardist
+				}
+>>>>>>> 40101a09 (V1.7)
 			}
 		}
 	}
@@ -221,6 +248,7 @@ law_isolationism = {
 		value = 0
 		
 		if = {
+<<<<<<< HEAD
 			limit = {
 				law_is_important = yes
 			}
@@ -233,6 +261,9 @@ law_isolationism = {
 				has_variable = desired_law_var
                 scope:law = var:desired_law_var
 			}
+=======
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
+>>>>>>> 40101a09 (V1.7)
 			add = 750
 		}
 	}
